@@ -1,0 +1,40 @@
+package prog1;
+import java.util.Scanner;
+public class StarsundDigits
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Bitte geben Sie die Zahl ein: ");
+		int zahl = scanner.nextInt();
+		System.out.println("Bitte geben Sie die Anzahl der Sterne ein: ");
+		int star = scanner.nextInt();		
+		scanner.close();
+		
+		if (zahl <=0 && star < 0)
+		  {
+			System.out.println("ERROR- Die Eingabe ist ungültig");
+		  }
+		while(zahl != 0);
+		int result = zahl%10;
+		zahl = zahl/10;
+		System.out.println(result);
+		
+		
+		
+		{
+			
+			
+		result = zahl % 10;
+		zahl = zahl/10;
+		for (int a= 1; a <= star ; a++)
+				{
+						System.out.println("*");
+				}
+			
+			
+		}
+	}
+
+}
